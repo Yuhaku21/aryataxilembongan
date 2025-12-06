@@ -1,106 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arya Taxi Lembongan</title>
 
     <!-- Google Font: Poppins -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 
     <!-- Bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<!-- Hero Section (Navbar di dalam background) -->
-<section class="hero">
-    <div class="hero-overlay"></div>
+    <!-- Hero Section (Navbar di dalam background) -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
 
-   <div class="container">
-     <!-- Navbar -->
-    <div class="container position-relative" style="z-index: 3;">
-        <nav class="navbar navbar-expand-lg navbar-custom">
-            <a class="navbar-brand fw-bold" href="#">
-                <img src="asset/logoarya.jpeg" alt="logo" style="height:40px;">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <div class="container">
+            <!-- Navbar -->
+            <div class="container position-relative" style="z-index: 5;">
+                <nav class="navbar navbar-expand-lg navbar-custom">
+                    <a class="navbar-brand fw-bold" href="#">
+                        <img src="asset/logoarya.jpeg" alt="logo" style="height:40px;">
+                    </a>
+                    <!-- Desktop Menu -->
+                    <div class="navbar-collapse d-none d-lg-flex justify-content-end">
+                        <ul class="navbar-nav gap-4">
+                            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#findme">Location</a></li>
+                            <li class="nav-item">
+                                <a class="btn btn-dark" href="#findme">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
 
-            <div class="collapse navbar-collapse" id="navmenu">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item mx-2"><a class="nav-link text-dark" href="#">Home</a></li>
-                    <li class="nav-item mx-2"><a class="nav-link text-dark" href="#">Service</a></li>
-                    <li class="nav-item mx-2"><a class="nav-link text-dark" href="#">Gallery</a></li>
+                    <!-- Hamburger -->
+                    <button class="navbar-toggler" id="openMenu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </nav>
+            </div>
+
+            <!-- Overlay (background gelap) -->
+            <div class="menu-overlay" id="menuOverlay"></div>
+
+            <!-- Sidebar Menu -->
+            <div class="menu-panel" id="menuPanel">
+                <div class="close-btn" id="closeMenu">
+                    <i class="bi bi-x-lg"></i>
+                </div>
+
+                <ul class="menu-list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#findme">Location</a></li>
+                    <li><a href="#contactus" class="btn btn-dark" style="background-color: black; color: white;"><i
+                                class="bi bi-whatsapp"></i> Contact
+                            Us</a></li>
                 </ul>
-               <a class="btn btn-dark"><i class="bi bi-whatsapp"></i> Contact Us</a>
             </div>
-        </nav>
-    </div>
 
-    <!-- Hero Text -->
-    <div class="container hero-content">
-        <h1 class="fw-bold display-5">
-            Island Adventures Made Easy with<br>
-            Arya Taxi & Tours.
-        </h1>
 
-        <p class="mt-3 col-md-6">
-            Experience seamless travel around Nusa Lembongan with Arya Taxi & Island Tour.
-            We provide reliable transportation, friendly service, and comfortable rides 
-            to help you explore the island with ease.
-        </p>
 
-        <a class="btn btn-custom mt-3" href="#">Booking Now  <i class="bi bi-arrow-right-circle"></i></a>
-    </div>
-   </div>
+            <!-- Hero Text -->
+            <div class="container hero-content">
+                <h1 class="fw-bold display-5">
+                    Island Adventures Made Easy with<br>
+                    Arya Taxi & Tours.
+                </h1>
 
-</section>
+                <p class="mt-3 col-md-6">
+                    Experience seamless travel around Nusa Lembongan with Arya Taxi & Island Tour.
+                    We provide reliable transportation, friendly service, and comfortable rides
+                    to help you explore the island with ease.
+                </p>
 
-<!-- About Section -->
-<section class="py-5 about-section">
+                <a class="btn btn-custom mt-3" href="#">Booking Now <i class="bi bi-arrow-right-circle"></i></a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 about-section">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">Arya Taxi Lembongan & Island Tour</h2>
+
+            <div class="container">
+                <!-- ABOUT -->
+                <div class="row align-items-center mb-5">
+                    <div class="col-md-6">
+                        <img src="asset/tourist1.jpeg" class="about-img img-fluid shadow-lg rounded-4" alt="">
+                    </div>
+                    <div class="col-md-6">
+                        <h3 class="fw-bold mb-3 mt-4">About Us</h3>
+                        <p class="about-text">
+                            Arya Taxi Lembongan delivers safe, comfortable, and reliable transport across Nusa
+                            Lembongan.
+                            With friendly local service and clean vehicles, we ensure your island journey is smooth and
+                            enjoyable.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- WHY CHOOSE US -->
+                <div class="row align-items-center flex-md-row-reverse">
+                    <div class="col-md-6">
+                        <img src="asset/tourist2.jpeg" class="about-img img-fluid shadow-lg rounded-4" alt="">
+                    </div>
+                    <div class="col-md-6">
+                        <h3 class="fw-bold mb-3 mt-4">Why Choose Us?</h3>
+                        <p class="about-text">
+                            We offer trusted pick-up services, flexible island tours, and top-quality hospitality from
+                            local drivers.
+                            Your comfort and satisfaction are always our priority during every trip.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="py-5 gallery-section">
+        <div class="container">
+            <h3 class="text-center">Gallery</h3>
+
+            <div class="container">
+                <!-- Gallery  -->
+                <div class="row align-items-center mb-5">
+                    <div class="col-md-6 mt-4">
+                        <img src="asset/tourist3.jpeg" class="about-img img-fluid shadow-lg rounded-4" alt="">
+                    </div>
+                    <div class="col-md-6 mt-4">
+                        <img src="asset/tourist4.jpeg" class="about-img img-fluid shadow-lg rounded-4" alt="">
+                    </div>
+                    <div class="col-md-6 mt-4">
+                        <img src="asset/tourist5.jpeg" class="about-img img-fluid shadow-lg rounded-4" alt="">
+                    </div>
+                    <div class="col-md-6 mt-4">
+                        <img src="asset/destiny1.jpeg" class="about-img img-fluid shadow-lg rounded-4" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Find Me -->
+    <section id="findme" class="py-5">
+        <div class="container">
+
+            <h3 class="text-center fw-bold mb-4">You Can Find Us Here</h3>
+            <div class="container">
+                <div class="map-wrapper shadow-lg rounded-4 overflow-hidden">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22966.360751561042!2d115.45006000000001!3d-8.6788515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd26d9f537b69f3%3A0xdc1b94bd6c67a033!2sNusa%20Lembongan!5e1!3m2!1sid!2sid!4v1765018028012!5m2!1sid!2sid"
+                        style="border:0; width:100%; height:450px;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chat-->
+
+   <!-- Contact Us -->
+<section id="contact" class="py-5 contact-bg">
     <div class="container">
-        <h2 class="text-center fw-bold mb-5">Arya Taxi Lembongan & Island Tour</h2>
+        <h3 class="text-center fw-bold mb-3 text-white">Contact Us</h3>
 
-       <div class="container">
-         <!-- ABOUT -->
-        <div class="row align-items-center mb-5">
+        <div class="row justify-content-center">
             <div class="col-md-6">
-                <img src="asset/tourist1.jpeg" class="about-img img-fluid shadow-lg rounded-4" alt="">
-            </div>
-            <div class="col-md-6">
-                <h3 class="fw-bold mb-3 mt-4">About Us</h3>
-                <p class="about-text">
-                    Arya Taxi Lembongan delivers safe, comfortable, and reliable transport across Nusa Lembongan. 
-                    With friendly local service and clean vehicles, we ensure your island journey is smooth and enjoyable.
-                </p>
+
+                <div class="card shadow-lg rounded-4">
+                    <div class="card-body">
+                        <!-- Input Pesan -->
+                        <div class="mb-3 mt-3">
+                            <label class="form-label">Your Message</label>
+                            <textarea id="pesan" class="form-control" rows="4"
+                                placeholder="Type here..."></textarea>
+                        </div>
+                        <!-- Tombol Kirim -->
+                        <button class="btn btn-dark " onclick="kirimWhatsApp()">
+                            Send Messages <i class="bi bi-send"></i>
+                        </button>
+
+                    </div>
+                </div>
+
             </div>
         </div>
-
-        <!-- WHY CHOOSE US -->
-        <div class="row align-items-center flex-md-row-reverse">
-            <div class="col-md-6">
-                <img src="asset/tourist2.jpeg" class="about-img img-fluid shadow-lg rounded-4" alt="">
-            </div>
-            <div class="col-md-6">
-                <h3 class="fw-bold mb-3 mt-4">Why Choose Us?</h3>
-                <p class="about-text">
-                    We offer trusted pick-up services, flexible island tours, and top-quality hospitality from local drivers. 
-                    Your comfort and satisfaction are always our priority during every trip.
-                </p>
-            </div>
-        </div>
-       </div>
-
     </div>
 </section>
 
 
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Footer -->
+    <footer class="py-3 text-center footer-custom" style="background-color: black;">
+        <p class="mb-0 text-dark text-white">© AryaTaxiLembongan 2025. All Rights Reserved.</p>
+    </footer>
 
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
 </body>
+
 </html>

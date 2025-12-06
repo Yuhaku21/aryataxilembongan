@@ -1,62 +1,73 @@
-  body {
-            font-family: 'Poppins', sans-serif;
-        }
+body {
+    font-family: 'Poppins', sans-serif;
+}
 
-        /* Navbar style */
-        .navbar-custom {
-            background: white;
-            border-radius: 15px;
-            padding: 10px 25px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-        }
+/* Navbar style */
+.navbar-custom {
+    background: white;
+    border-radius: 15px;
+    padding: 10px 25px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 10;
+}
 
-        /* Hero Section */
-        .hero {
-            background: url(asset/nusa-lembongan.jpeg) 
-            center/cover no-repeat;
-            height: 100vh;
-            position: relative;
-            color: white;
-            padding-top: 20px;
-        }
+/* Hero Section */
+.hero {
+    background: url(asset/nusa-lembongan.jpeg) center/cover no-repeat;
+    height: 100vh;
+    position: relative;
+    color: white;
+    padding-top: 20px;
+    transition: height 0.3s ease;
+    /* penting agar smooth */
+    transition: 0.3s ease;
+}
 
-        .hero-overlay {
-            position: absolute;
-            top: 0; 
-            left: 0;
-            width: 100%; 
-            height: 100%;
-            background: rgba(0,0,0,0.45);
-            z-index: 1;
-        }
+/* Saat menu hamburger dibuka, hero memanjang */
+.hero.menu-open {
+    height: auto !important;
+    padding-bottom: 180px;
+}
 
-        .hero-content {
-            position: relative;
-            z-index: 2;
-            margin-top: 50px;
-        }
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 1;
+}
 
-        .btn-custom {
-            border: 2px solid white;
-            color: white;
-            padding: 8px 20px;
-            border-radius: 8px;
-            font-weight: 500;
-        }
+.hero-content {
+    position: relative;
+    z-index: 2;
+    margin-top: 50px;
+    transition: margin-top 0.3s ease;
+}
 
-        .btn-custom:hover {
-            background: white;
-            color: black;
-        }
+.btn-custom {
+    border: 2px solid white;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-weight: 500;
+}
 
-        /* About Section */
-        .about-img {
-            border-radius: 12px;
-            width: 100%;
-            object-fit: cover;
-        }
-        
-        .about-section {
+.btn-custom:hover {
+    background: white;
+    color: black;
+}
+
+/* About Section */
+.about-img {
+    border-radius: 12px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.about-section {
     background: #f7f9fc;
 }
 
@@ -77,4 +88,109 @@
     .about-img {
         height: 260px;
     }
+}
+
+.gallery-section .about-img {
+    transition: 0.4s ease;
+}
+
+.gallery-section .about-img:hover {
+    transform: scale(1.08);
+    filter: brightness(0.8);
+}
+
+/* Find Me */
+#findme {
+    background: #f8f9fa;
+}
+
+#findme h3 {
+    font-weight: 600;
+    color: #333;
+}
+
+#findme .map-wrapper {
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+#findme .map-wrapper:hover {
+    transform: scale(1.02);
+}
+
+/* Overlay gelap */
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 998;
+}
+
+/* Overlay */
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: none;
+    z-index: 9998;
+}
+
+/* Panel menu */
+.menu-panel {
+    position: fixed;
+    top: 0;
+    right: -330px;
+    width: 300px;
+    height: 100%;
+    background: #fff;
+    padding: 30px;
+    box-shadow: -3px 0 15px rgba(0, 0, 0, 0.3);
+    transition: 0.3s ease;
+    z-index: 9999;
+}
+
+.menu-panel ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 40px;
+}
+
+.menu-panel li {
+    margin: 20px 0;
+}
+
+.menu-panel a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #222;
+}
+
+/* Tombol close */
+.close-btn {
+    font-size: 35px;
+    cursor: pointer;
+    text-align: right;
+}
+
+.close-btn i {
+    color: #000 !important;
+}
+
+/* Background untuk Contact Section */
+.contact-bg {
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),  /* Overlay gelap */
+        url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1350&q=80'); /* Ganti sesuai gambar kamu */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    border-radius: 10px;
 }
