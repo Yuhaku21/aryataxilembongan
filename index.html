@@ -9,15 +9,16 @@
     <!-- Google Font: Poppins -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
+
+
 </head>
 
 <body>
-
     <!-- Hero Section (Navbar di dalam background) -->
     <section class="hero">
         <div class="hero-overlay"></div>
@@ -37,7 +38,7 @@
                             <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
                             <li class="nav-item"><a class="nav-link" href="#findme">Location</a></li>
                             <li class="nav-item">
-                                <a class="btn btn-dark" href="#findme">Contact Us</a>
+                                <a class="btn btn-dark" href="#contact">Contact Us</a>
                             </li>
                         </ul>
                     </div>
@@ -59,21 +60,20 @@
                 </div>
 
                 <ul class="menu-list">
-                    <li><a href="#">Home</a></li>
+                    <li><a href="#"> Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#gallery">Gallery</a></li>
                     <li><a href="#findme">Location</a></li>
-                    <li><a href="#contactus" class="btn btn-dark" style="background-color: black; color: white;"><i
+                    <li><a href="#contact" class="btn btn-dark" style="background-color: black; color: white;"><i
                                 class="bi bi-whatsapp"></i> Contact
                             Us</a></li>
                 </ul>
             </div>
 
 
-
             <!-- Hero Text -->
             <div class="container hero-content">
-                <h1 class="fw-bold display-5">
+                <h1 class="fw-bold display-5" >
                     Island Adventures Made Easy with<br>
                     Arya Taxi & Tours.
                 </h1>
@@ -84,7 +84,8 @@
                     to help you explore the island with ease.
                 </p>
 
-                <a class="btn btn-custom mt-3" href="#">Booking Now <i class="bi bi-arrow-right-circle"></i></a>
+                <a class="btn btn-custom mt-3" href="https://wa.me/6287779243533?text=Hello%F0%9F%91%8B%2C%20I%20would%20like%20to%20order%20a%20taxi%20service.
+" >Booking Now <i class="bi bi-arrow-right-circle"></i></a>
             </div>
         </div>
 
@@ -93,17 +94,20 @@
     <!-- About Section -->
     <section id="about" class="py-5 about-section">
         <div class="container">
-            <h2 class="text-center fw-bold mb-5">Arya Taxi Lembongan & Island Tour</h2>
+            <h2 class="text-center fw-bold mb-5" data-aos="zoom-in">Arya Taxi Lembongan & Island Tour</h2>
 
             <div class="container">
                 <!-- ABOUT -->
                 <div class="row align-items-center mb-5">
                     <div class="col-md-6">
-                        <img src="asset/tourist1.jpeg" class="about-img img-fluid shadow-lg rounded-4" alt="">
+                        <img src="asset/tourist1.jpeg" class="about-img img-fluid shadow-lg rounded-4" alt=""
+                            data-aos="zoom-in">
                     </div>
                     <div class="col-md-6">
-                        <h3 class="fw-bold mb-3 mt-4">About Us</h3>
-                        <p class="about-text">
+                        <h3 class="fw-bold mb-3 mt-4" data-aos="fade-right" data-aos-offset="300"
+                            data-aos-easing="ease-in-sine">About Us</h3>
+                        <p class="about-text" data-aos="fade-right" data-aos-offset="300"
+                            data-aos-easing="ease-in-sine">
                             Arya Taxi Lembongan delivers safe, comfortable, and reliable transport across Nusa
                             Lembongan.
                             With friendly local service and clean vehicles, we ensure your island journey is smooth and
@@ -115,11 +119,14 @@
                 <!-- WHY CHOOSE US -->
                 <div class="row align-items-center flex-md-row-reverse">
                     <div class="col-md-6">
-                        <img src="asset/tourist2.jpeg" class="about-img img-fluid shadow-lg rounded-4" alt="">
+                        <img src="asset/tourist2.jpeg" class="about-img img-fluid shadow-lg rounded-4" alt=""
+                            data-aos="zoom-in">
                     </div>
                     <div class="col-md-6">
-                        <h3 class="fw-bold mb-3 mt-4">Why Choose Us?</h3>
-                        <p class="about-text">
+                        <h3 class="fw-bold mb-3 mt-4" data-aos="fade-right" data-aos-offset="300"
+                            data-aos-easing="ease-in-sine">Why Choose Us?</h3>
+                        <p class="about-text" data-aos="fade-right" data-aos-offset="300"
+                            data-aos-easing="ease-in-sine">
                             We offer trusted pick-up services, flexible island tours, and top-quality hospitality from
                             local drivers.
                             Your comfort and satisfaction are always our priority during every trip.
@@ -134,22 +141,26 @@
     <!-- Gallery -->
     <section id="gallery" class="py-5 gallery-section">
         <div class="container">
-            <h3 class="text-center">Gallery</h3>
+            <h3 class="text-center" data-aos="zoom-in">Gallery</h3>
 
             <div class="container">
                 <!-- Gallery  -->
                 <div class="row align-items-center mb-5">
                     <div class="col-md-6 mt-4">
-                        <img src="asset/tourist3.jpeg" class="about-img img-fluid shadow-lg rounded-4" alt="">
+                        <img src="asset/tourist3.jpeg" class="about-img img-fluid shadow-lg rounded-4" alt=""
+                            data-aos="flip-left">
                     </div>
                     <div class="col-md-6 mt-4">
-                        <img src="asset/tourist4.jpeg" class="about-img img-fluid shadow-lg rounded-4" alt="">
+                        <img src="asset/tourist4.jpeg" class="about-img img-fluid shadow-lg rounded-4" alt=""
+                            data-aos="flip-left">
                     </div>
                     <div class="col-md-6 mt-4">
-                        <img src="asset/tourist5.jpeg" class="about-img img-fluid shadow-lg rounded-4" alt="">
+                        <img src="asset/tourist5.jpeg" class="about-img img-fluid shadow-lg rounded-4" alt=""
+                            data-aos="flip-left">
                     </div>
                     <div class="col-md-6 mt-4">
-                        <img src="asset/destiny1.jpeg" class="about-img img-fluid shadow-lg rounded-4" alt="">
+                        <img src="asset/destiny1.jpeg" class="about-img img-fluid shadow-lg rounded-4" alt=""
+                            data-aos="flip-left">
                     </div>
                 </div>
 
@@ -161,8 +172,8 @@
     <section id="findme" class="py-5">
         <div class="container">
 
-            <h3 class="text-center fw-bold mb-4">You Can Find Us Here</h3>
-            <div class="container">
+            <h3 class="text-center fw-bold mb-4" data-aos="zoom-in">You Can Find Us Here</h3>
+            <div class="container" data-aos="zoom-in">
                 <div class="map-wrapper shadow-lg rounded-4 overflow-hidden">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22966.360751561042!2d115.45006000000001!3d-8.6788515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd26d9f537b69f3%3A0xdc1b94bd6c67a033!2sNusa%20Lembongan!5e1!3m2!1sid!2sid!4v1765018028012!5m2!1sid!2sid"
@@ -176,34 +187,34 @@
 
     <!-- Chat-->
 
-   <!-- Contact Us -->
-<section id="contact" class="py-5 contact-bg">
-    <div class="container">
-        <h3 class="text-center fw-bold mb-3 text-white">Contact Us</h3>
+    <!-- Contact Us -->
+    <section id="contact" class="py-5 contact-bg mb-5">
+        <div class="container">
+            <h3 class="text-center fw-bold mb-3 text-white" data-aos="zoom-in">Contact Us</h3>
 
-        <div class="row justify-content-center">
-            <div class="col-md-6">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
 
-                <div class="card shadow-lg rounded-4">
-                    <div class="card-body">
-                        <!-- Input Pesan -->
-                        <div class="mb-3 mt-3">
-                            <label class="form-label">Your Message</label>
-                            <textarea id="pesan" class="form-control" rows="4"
-                                placeholder="Type here..."></textarea>
+                    <div class="card shadow-lg rounded-4" data-aos="zoom-in">
+                        <div class="card-body">
+                            <!-- Input Pesan -->
+                            <div class="mb-3 mt-3">
+                                <label class="form-label">Your Message</label>
+                                <textarea id="pesan" class="form-control" rows="4"
+                                    placeholder="Type here..."></textarea>
+                            </div>
+                            <!-- Tombol Kirim -->
+                            <button class="btn btn-dark " onclick="kirimWhatsApp()">
+                                Send Messages <i class="bi bi-send"></i>
+                            </button>
+
                         </div>
-                        <!-- Tombol Kirim -->
-                        <button class="btn btn-dark " onclick="kirimWhatsApp()">
-                            Send Messages <i class="bi bi-send"></i>
-                        </button>
-
                     </div>
-                </div>
 
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
 
     <!-- Footer -->
@@ -212,8 +223,13 @@
     </footer>
 
     <!-- Bootstrap JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="main.js"></script>
+
 </body>
 
 </html>
