@@ -1,7 +1,7 @@
 
 function kirimWhatsApp() {
     let pesan = document.getElementById("pesan").value;
-    let nomor = "6287779243533"; // GANTI KE NOMOR KAMU
+    let nomor = "6281703274577"; // GANTI KE NOMOR KAMU
 
     if (pesan.trim() === "") {
         alert("Input messages here");
